@@ -1,9 +1,7 @@
-import { list } from 'postcss';
-import data from '../data/data'
 import Friend from './Friend';
-const FriendList = ({ friendsProp }) => {
+const FriendList = ({ friendsProp, onSelection, selectedFriend }) => {
     return (
-        <ul>{friendsProp.map((friend) => <Friend key={friend.id} friend={friend} />)}</ul>
+        <ul>{friendsProp.map((friend) => <Friend key={friend.id} friend={friend} selectedFriend={selectedFriend} onSelection={onSelection} />)}</ul>
     );
 }
 
