@@ -16,7 +16,7 @@ const FormSplitBill = () => {
             <label>🤑 Who is paying the bill</label>
             <select>
                 <option value='user'>You</option>
-                <option value='friend'>X</option>
+                <option value='friend'>Friend</option>
             </select>
 
             <Button>Split Bill</Button>
